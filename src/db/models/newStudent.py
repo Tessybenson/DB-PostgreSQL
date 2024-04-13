@@ -12,3 +12,12 @@ class newStudentpy(Base):
     def __str__(self):
         # Return a user-friendly string representation of the object
         return f"{self.id}, {self.grade}, {self.age}"
+    
+class oldStudentpy(Base):
+    id = Column(Integer, primary_key=True, index=True)
+    grade = Column(String, nullable=False)
+    age = Column(Integer, nullable=False)
+
+    def __str__(self):
+        # Return a user-friendly string representation of the object
+        return f"{self.id}, {self.grade}, {self.age}"
